@@ -1,0 +1,1 @@
+*Folder ini buat nyimpen gambar
