@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #180e06;
+    color: white;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7c896;
+    color: black;
+    padding: 20px;
+
+}
+.box-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+.box-nav a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: 250ms all;
+    font-weight: 800;
+    font-size: 17px;
+}
+.box-nav a:hover {
+    color: #f9f9f3;
+}
