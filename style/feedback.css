@@ -5,49 +5,50 @@
   font-family: monospace;
 }
 body {
-    background-color: #180e06;
-    color: white;
+  background-color: #180e06;
+  color: white;
 }
 
 #nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #e7c896;
-    color: black;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7c896;
+  color: black;
+  padding: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 #currentPage {
-    color: white;
+  color: white;
 }
 
 .button-signLog {
-    background-color: #fff762;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 250ms ease-in;
+  background-color: #fff762;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 250ms ease-in;
 }
 
 .button-signLog:hover {
-    background-color: #f9ed01;
-    transform: scale(1.09);
-    cursor: pointer;
+  background-color: #f9ed01;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 .box-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
 .box-nav a {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    transition: 250ms all;
-    font-weight: 800;
-    font-size: 17px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: 250ms all;
+  font-weight: 800;
+  font-size: 17px;
 }
 .box-nav a:hover {
-    color: #f9f9f3;
+  color: #f9f9f3;
 }
