@@ -1,14 +1,18 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: monospace;
 }
+
+/* Body */
 body {
   background-color: #180e06;
   color: white;
 }
 
+/* Navigation Bar */
 #nav {
   display: flex;
   justify-content: space-between;
@@ -18,7 +22,9 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
+
 #currentPage {
   color: white;
 }
@@ -28,6 +34,8 @@ body {
   padding: 10px;
   border-radius: 10px;
   transition: 250ms ease-in;
+  text-decoration: none;
+  color: black;
 }
 
 .button-signLog:hover {
@@ -35,6 +43,7 @@ body {
   transform: scale(1.09);
   cursor: pointer;
 }
+
 .box-nav {
   display: flex;
   flex-direction: row;
@@ -49,6 +58,121 @@ body {
   font-weight: 800;
   font-size: 17px;
 }
+
 .box-nav a:hover {
   color: #f9f9f3;
+}
+
+/* About Us Section */
+#about-us {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  line-height: 1.8;
+}
+
+#about-us h1 {
+  color: #e7c896;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#about-us>p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Our Mission */
+#about-us h2 {
+  color: #e7c896;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+#about-us>h2,
+#about-us>p {
+  text-align: center;
+}
+
+#about-us>h2 {
+  margin-bottom: 10px;
+}
+
+/* Contact Us */
+#contact-us {
+  margin-top: 50px;
+  padding: 30px;
+  border: 2px solid #8b5e3c;
+  border-radius: 15px;
+  background-color: #24160d;
+}
+
+#contact-us h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#contact-us p {
+  font-size: 15px;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+
+#contact-us strong {
+  color: #e7c896;
+}
+
+#contact-us a {
+  color: white;
+  text-decoration: none;
+  transition: 250ms ease;
+}
+
+#contact-us a:hover {
+  color: #e7c896;
+}
+
+/* Footer */
+footer {
+  background-color: #e7c896;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .box-nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .box-nav a {
+    font-size: 14px;
+  }
+
+  #about-us {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  #about-us h1 {
+    font-size: 28px;
+  }
+
+  #contact-us {
+    padding: 20px;
+  }
 }
