@@ -52,3 +52,123 @@ body {
 .box-nav a:hover {
   color: #f9f9f3;
 }
+.feedback-page{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.feedback-card{
+  flex: 1;
+  min-width: 320px;
+  background-color: #23150a;
+  border: 2px solid #e7c896;
+  border-radius: 12px;
+  padding: 25px;
+}
+section-title {
+  color: #e7c896;
+  font-size: 20px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+section-desc {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  color: #e7c896;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #180e06;
+  border: 1px solid #e7c896;
+  border-radius: 8px;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #fff762;
+}
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: #fff762;
+}
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.testimonial-item {
+  background-color: #180e06;
+  border: 1px solid #3d2512;
+  border-left: 4px solid #fff762;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.user-name {
+  color: #e7c896;
+  font-weight: bold;
+  font-size: 14px;
+}
+.stars-display {
+  color: #fff762;
+  font-size: 15px;
+}
+
+.user-text {
+  color: #ddd;
+  font-size: 13px;
+  line-height: 1.4;
+}
