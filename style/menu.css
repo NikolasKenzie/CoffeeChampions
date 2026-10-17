@@ -1,126 +1,261 @@
+
+/* ===== GLOBAL ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: monospace;
 }
+
 body {
   background: linear-gradient(to bottom, #000000, #28201a);
   color: white;
+  min-height: 100vh;
 }
 
+/* ===== NAVBAR ===== */
 #nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
   background-color: #e7c896;
   color: black;
-  padding: 20px;
-  align-items: center;
+
   position: sticky;
   top: 0;
-}
-#currentPage {
-  color: white;
+  z-index: 100;
 }
 
-.button-signLog {
-  background-color: #fff762;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 250ms ease-in;
-}
-
-.button-signLog:hover {
-  background-color: #f9ed01;
-  transform: scale(1.09);
-  cursor: pointer;
-}
 .box-nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
 .box-nav a {
-  cursor: pointer;
   text-decoration: none;
   color: black;
-  transition: 250ms all;
   font-weight: 800;
   font-size: 17px;
+  transition: color 250ms ease;
 }
+
 .box-nav a:hover {
-  color: #f9f9f3;
+  color: #ffffff;
 }
 
+#currentPage {
+  color: #ffffff;
+}
 
+.button-signLog {
+  display: inline-block;
+  background-color: #fff762;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 250ms ease, transform 250ms ease;
+}
+
+.button-signLog:hover {
+  background-color: #f9ed01;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===== SEARCH ===== */
 .box-inputSearch {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px auto 0;
+  padding: 0 20px;
 }
-.box-checkbox {
-  display: flex;
-  flex: row;
-  gap: 5px;
-}
+
 .box-inputSearch input {
-  border: 2px solid #c37303 ;
   width: 240px;
-  height: 35px;
+  height: 38px;
+  padding: 10px;
+  border: 2px solid #c37303;
   border-radius: 10px;
-  padding: 5px;
+  outline: none;
 }
+
+.box-inputSearch input:focus {
+  border-color: #e7c896;
+}
+
+.box-inputSearch button {
+  padding: 10px 20px;
+  background-color: #c37303;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.box-inputSearch button:hover {
+  background-color: #e08a0b;
+}
+
+/* ===== CATEGORY CHECKBOXES ===== */
 .box-inputCheckbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   max-width: 500px;
-  margin: 30px auto; 
+  margin: 25px auto;
   padding: 20px;
   background-color: #1a1a1a;
   border-radius: 8px;
 }
 
-.box-inputSearch button {
-  background-color: #c37303;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
+.box-inputCheckbox input {
+  accent-color: #c37303;
   cursor: pointer;
 }
 
-#section-MenuCoffee, #section-menuNonCoffee, #section-MenuSnack {
-  margin: 40px auto;
-  max-width: 90%;
-
+.box-inputCheckbox label {
+  cursor: pointer;
 }
 
+/* ===== MENU SECTIONS ===== */
+#section-MenuCoffee,
+#section-menuNonCoffee,
+#section-MenuSnack {
+  max-width: 1100px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  border-bottom: 1px solid bisque;
+  border-radius: 12px;
+}
+
+#section-MenuCoffee h2,
+#section-menuNonCoffee h2,
+#section-MenuSnack h2 {
+  margin-bottom: 20px;
+  color: #e7c896;
+  font-size: 25px;
+}
+
+/* ===== MENU CARDS ===== */
 .box-cardMenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 25px;
 }
 
 .card-menu {
+  position: relative; /* Acuan posisi icon Best Seller */
+
+  width: 220px;
+  padding: 12px;
   background-color: #28201a;
-  width:200px;
-  padding: 10px;
-  border-radius: 10px;
-
-  text-align: justify;
-
   border: 1px solid burlywood;
+  border-radius: 12px;
+
+  text-align: left;
+  overflow: hidden;
+  transition: transform 250ms ease;
 }
 
-
-.card-menu img {
-  width: 180px;
+.card-menu:hover {
+  transform: translateY(-5px);
+  border-color: #e7c896;
 }
+
+.card-menu > img:not(.icon-bestSeller) {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-menu h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.card-menu p {
+  color: #e7c896;
+  font-size: 15px;
+}
+
+.card-menu button {
+  background-color: #e7c896;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin-top: 12px;
+
+  transition: 250ms ease-in-out;
+}
+.card-menu button:hover {
+  background-color: #e9dbc5;
+}
+
+/* ===== BEST SELLER ICON ===== */
+.icon-bestSeller {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+
+  width: 28px;
+  height: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+/* @media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box-nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .box-nav a {
+    font-size: 14px;
+  }
+
+  #section-MenuCoffee,
+  #section-menuNonCoffee,
+  #section-MenuSnack {
+    width: 95%;
+  }
+
+  .card-menu {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-menu {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .box-inputCheckbox {
+    margin: 20px;
+  }
+} */
