@@ -5,7 +5,7 @@
   font-family: monospace;
 }
 body {
-  background-color: #180e06;
+  background: linear-gradient(to bottom, #000000, #28201a);
   color: white;
 }
 
@@ -51,4 +51,76 @@ body {
 }
 .box-nav a:hover {
   color: #f9f9f3;
+}
+
+
+.box-inputSearch {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.box-checkbox {
+  display: flex;
+  flex: row;
+  gap: 5px;
+}
+.box-inputSearch input {
+  border: 2px solid #c37303 ;
+  width: 240px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.box-inputCheckbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 30px auto; 
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.box-inputSearch button {
+  background-color: #c37303;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#section-MenuCoffee, #section-menuNonCoffee, #section-MenuSnack {
+  margin: 40px auto;
+  max-width: 90%;
+
+}
+
+.box-cardMenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-menu {
+  background-color: #28201a;
+  width:200px;
+  padding: 10px;
+  border-radius: 10px;
+
+  text-align: justify;
+
+  border: 1px solid burlywood;
+}
+
+
+.card-menu img {
+  width: 180px;
 }

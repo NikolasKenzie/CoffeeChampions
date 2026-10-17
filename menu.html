@@ -1,26 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/menu.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/menu.css" rel="stylesheet" />
     <title>CoffeeChampions</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
+      <nav id="nav">
+        <h2>CoffeeChampions</h2>
+        <div class="box-nav">
+          <a href="index.html">Home</a>
+          <a href="menu.html" id="currentPage">Menu</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="aboutUs.html">About us</a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <a class="button-signLog">SignUp/Login</a>
+      </nav>
 
-        <nav id="nav">
-            <h2>CoffeeChampions</h2>
-            <div class="box-nav">
-                <a href="index.html">Home</a>
-                <a href="menu.html" id="currentPage">Menu</a>
-                <a href="feedback.html">Feedback</a>
-                <a href="aboutUs.html">About us</a>
-                <a href="cart.html">Cart</a>
-            </div>
-            <a class="button-signLog">SignUp/Login</a>
-        </nav>
+      <div class="">
+        <div class="box-inputSearch">
+          <input type="text" />
+          <button>Search</button>
+        </div>
 
+        <div class="box-inputCheckbox">
+          <input type="checkbox" name="coffee" />
+          <label for="coffee">Coffee</label>
+
+          <input type="checkbox" name="milk" />
+          <label for="milk">Milk</label>
+
+          <input type="checkbox" name="alcohol" />
+          <label for="alhocol">Alcohol</label>
+
+          <input type="checkbox" name="snack" />
+          <label for="snack">Snack</label>
+        </div>
+      </div>
+
+      <section id="section-MenuCoffee">
+        <h2>Coffee</h2>
+        <div class="box-cardMenu">
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-MenuCoffee">
+        <h2>Non-Coffee</h2>
+        <div class="box-cardMenu">
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-MenuSnack">
+        <h2>Non -coffee</h2>
+        <div class="box-cardMenu">
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+          <div class="card-menu">
+            <img src="assets/americanoMenu.jpg" alt="" />
+            <h3><b>Americano</b></h3>
+            <p>Rp20.000</p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
