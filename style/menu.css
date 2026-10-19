@@ -220,7 +220,7 @@ body {
   height: auto;
 }
 
-
+/* table */
 
 #sec-table-tierList {
   width: 90%;
@@ -241,12 +241,10 @@ body {
 .table-description {
   color: #c9b9a5;
   margin-bottom: 25px;
-  line-height: 1.6;
 }
 
 .table-container {
   width: 100%;
-  overflow-x: auto;
   border-radius: 10px;
 }
 
@@ -263,7 +261,6 @@ body {
   padding: 16px 14px;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 #sec-table-tierList td {

@@ -21,6 +21,102 @@
             <a class="button-signLog">SignUp/Login</a>
         </nav>
 
+        
+<section id="my-cart">
+    <div class="cart-header">
+        
+        <h1>My Cart</h1>
+        <p>Pay first, then you can enjoy your drink hahahah.</p>
+    </div>
+
+    <div class="cart-layout">
+
+        <!-- LEFT: ORDER DETAILS -->
+        <div class="cart-items">
+            <h2>Your Orders</h2>
+
+            <ul class="order-list">
+                <li class="order-item">
+                    <img src="assets/americanoMenu.jpg" alt="Cappuccino">
+
+                    <div class="order-info">
+                        <h3>Cappuccino</h3>
+                        <p>Regular · Hot</p>
+                        <span>Rp20.000</span>
+                    </div>
+
+                    <p class="item-quantity">x1</p>
+                </li>
+
+                <li class="order-item">
+                    <img src="assets/butterscotchMenu.jpg" alt="Butterscotch Latte">
+
+                    <div class="order-info">
+                        <h3>Butterscotch Latte</h3>
+                        <p>Regular · Iced</p>
+                        <span>Rp22.000</span>
+                    </div>
+
+                    <p class="item-quantity">x1</p>
+                </li>
+            </ul>
+
+            <!-- ORDER NOTE -->
+            <div class="cart-note">
+                <label for="order-note">Add Note</label>
+                <p>Any Note or message for your order?</p>
+
+                <textarea
+                    id="order-note"
+                    name="order-note"
+                    rows="4"
+                    placeholder="Less sugar...., make my dish delicious"
+                ></textarea>
+            </div>
+        </div>
+
+        <!-- RIGHT: ORDER SUMMARY -->
+        <aside class="order-summary">
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>Rp42.000</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span>Rp42.000</span>
+            </div>
+
+            <!-- PAYMENT METHOD -->
+            <div class="payment-method">
+                <label for="payment">Payment Method</label>
+
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>
+                        Choose payment method
+                    </option>
+                    <option value="cash">Cash</option>
+                    <option value="qris">QRIS</option>
+                    <option value="ewallet">E-Wallet</option>
+                    <option value="bank">Bank Transfer</option>
+                    <option value="barter">Barter</option>
+                </select>
+            </div>
+
+            <button type="button" class="checkout-button" onclick="alert('Payment successful'); window.location.href = 'index.html'"">
+                Proceed to Checkout
+            </button>
+
+            <a href="menu.html" class="continue-shopping">
+                Continue Shopping
+            </a>
+        </aside>
+
+    </div>
+</section>
+
+        
     </main>
 </body>
 </html>
