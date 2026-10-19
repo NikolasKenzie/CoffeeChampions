@@ -52,3 +52,290 @@ body {
 .box-nav a:hover {
   color: #f9f9f3;
 }
+
+/* ===== MY CART ===== */
+
+#my-cart {
+  width: 90%;
+  
+  margin: 50px auto;
+}
+
+.cart-header {
+  margin-bottom: 35px;
+}
+
+.cart-subtitle {
+  color: #c37303;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.cart-header h1 {
+  color: #e7c896;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.cart-header > p:last-child {
+  color: #c9b9a5;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: start;
+  gap: 30px;
+}
+
+.cart-items,
+.order-summary {
+  background-color: #24180f;
+  border: 1px solid #59432e;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.cart-items h2,
+.order-summary h2 {
+  color: #e7c896;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* ===== ORDER LIST ===== */
+
+.order-list {
+  list-style: none;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid #49382a;
+}
+
+.order-item:first-child {
+  padding-top: 0;
+}
+
+.order-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-info h3 {
+  color: #fff4e4;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.order-info p {
+  color: #b8a591;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.order-info span {
+  color: #e7c896;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item-quantity {
+  color: #e7c896;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ===== SPECIAL INSTRUCTIONS ===== */
+
+.cart-note {
+  margin-top: 30px;
+}
+
+.cart-note label,
+.payment-method label {
+  display: block;
+  color: #e7c896;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-note p {
+  color: #b8a591;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cart-note textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 14px;
+  resize: vertical;
+  background-color: #180e06;
+  border: 1px solid #59432e;
+  border-radius: 8px;
+  color: white;
+  font-family: monospace;
+  font-size: 13px;
+  outline: none;
+}
+
+.cart-note textarea:focus {
+  border-color: #e7c896;
+}
+
+.cart-note textarea::placeholder {
+  color: #8d7b68;
+}
+
+/* ===== ORDER SUMMARY ===== */
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #c9b9a5;
+  font-size: 14px;
+}
+
+.total-row {
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: 1px solid #59432e;
+  color: #e7c896;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ===== PAYMENT SELECT ===== */
+
+.payment-method {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.payment-method select {
+  width: 100%;
+  padding: 13px;
+  background-color: #180e06;
+  border: 1px solid #59432e;
+  border-radius: 8px;
+  color: white;
+  font-family: monospace;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+.payment-method select:focus {
+  border-color: #e7c896;
+}
+
+.payment-method option {
+  background-color: #24180f;
+  color: white;
+}
+
+/* ===== CHECKOUT BUTTON ===== */
+
+.checkout-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e7c896;
+  color: #180e06;
+  border: none;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+
+.checkout-button:hover {
+  background-color: #f5dfb8;
+  transform: translateY(-2px);
+}
+
+.continue-shopping {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  color: #c9b9a5;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 250ms ease;
+}
+
+.continue-shopping:hover {
+  color: #080808;
+  background-color: whitesmoke;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-header h1 {
+    font-size: 32px;
+  }
+
+  .cart-items,
+  .order-summary {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #my-cart {
+    width: 94%;
+    margin: 30px auto;
+  }
+
+  .order-item {
+    gap: 12px;
+  }
+
+  .order-item img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .order-info h3 {
+    font-size: 13px;
+  }
+
+  .order-info p {
+    font-size: 11px;
+  }
+
+  .order-info span {
+    font-size: 12px;
+  }
+
+  .item-quantity {
+    font-size: 12px;
+  }
+}
