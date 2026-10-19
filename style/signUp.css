@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #28201a);
+  color: white;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#box-login {
+  background-color: #28201a;
+  width: 100%;
+  width: 600px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2a2a2a;
+}
+
+#box-login h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLogin label {
+  font-size: 15 px;
+  margin-bottom: 6px;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+.formLogin input {
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 18px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.submitButton {
+  background-color: rgb(251, 167, 57);
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.backtohome {
+  background-color: aliceblue;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+
+.formLogin p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#haveAccount {
+  color: #ffc107;
+  margin-left: 5px;
+}
