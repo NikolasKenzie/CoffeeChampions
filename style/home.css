@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: monospace;
 }
+
+
 body {
   background: linear-gradient(to bottom, #000000, #28201a);
   color: white;
