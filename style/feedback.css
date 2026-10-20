@@ -25,9 +25,12 @@ body {
 
 .button-signLog {
   background-color: #fff762;
+  color: black;
+  text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   transition: 250ms ease-in;
+
 }
 
 .button-signLog:hover {

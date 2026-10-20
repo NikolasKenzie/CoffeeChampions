@@ -25,6 +25,8 @@ body {
 
 .button-signLog {
   background-color: #fff762;
+  color: black;
+  text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   transition: 250ms ease-in;
@@ -134,9 +136,7 @@ body {
   border-radius: 10px;
 }
 
-.order-info {
-  flex: 1;
-}
+
 
 .order-info h3 {
   color: #fff4e4;
@@ -162,7 +162,7 @@ body {
   font-size: 14px;
 }
 
-/* ===== SPECIAL INSTRUCTIONS ===== */
+
 
 .cart-note {
   margin-top: 30px;
@@ -205,7 +205,7 @@ body {
   color: #8d7b68;
 }
 
-/* ===== ORDER SUMMARY ===== */
+
 
 .summary-row {
   display: flex;
@@ -225,7 +225,7 @@ body {
   font-weight: bold;
 }
 
-/* ===== PAYMENT SELECT ===== */
+
 
 .payment-method {
   margin-top: 25px;
@@ -308,34 +308,3 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  #my-cart {
-    width: 94%;
-    margin: 30px auto;
-  }
-
-  .order-item {
-    gap: 12px;
-  }
-
-  .order-item img {
-    width: 65px;
-    height: 65px;
-  }
-
-  .order-info h3 {
-    font-size: 13px;
-  }
-
-  .order-info p {
-    font-size: 11px;
-  }
-
-  .order-info span {
-    font-size: 12px;
-  }
-
-  .item-quantity {
-    font-size: 12px;
-  }
-}

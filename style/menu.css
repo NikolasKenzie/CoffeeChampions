@@ -55,13 +55,13 @@ body {
   display: inline-block;
   background-color: #fff762;
   color: black;
+  color: black;
+  text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
-  transition:
-    background-color 250ms ease,
-    transform 250ms ease;
+ transition: 250ms ease;
 }
 
 .button-signLog:hover {
