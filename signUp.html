@@ -4,31 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style/signUp.css" rel="stylesheet" />
-    <title>CoffeeChampions</title>
+    <title>Sign Up | CoffeeChampions</title>
   </head>
+
   <body>
     <main>
-      <div id="box-login">
-        <h2>Sign up</h2>
-        <div>
-          <form class="formLogin" action="index.html">
-            <label for="username">username</label>
-            <input type="text" id="username" name="username" required />
+      <div id="box-signup">
+        
+        <section id="section-logo">
+          <div class="box-logo">
+            <div class="logo-icon">
+              <img
+                src="assets/americanoMenu.jpg"
+                alt="CoffeeChampions coffee"
+              />
+            </div>
 
-            <label for="email">email</label>
-            <input type="text" id="email" name="email" required />
+            <h1>CoffeeChampions</h1>
+            <p>little things can make the biggest difference...</p>
+          </div>
+        </section>
 
-            <label for="password">password</label>
-            <input type="password" id="password" name="password" required />
-
-            <button type="submit" class="submitButton">Sign Up</button>
-            <p>
-              already have account?<a id="haveAccount" href="login.html">
-                Login</a
-              >
+        
+        <section id="section-form">
+          <div class="form-content">
+            <h2>Sign-up</h2>
+            <p class="form-description">
+              little things can make the biggest difference...
             </p>
-          </form>
-        </div>
+
+            <form class="formSignup" action="index.html"">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Choose a username"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Create a password"
+                  required
+                  minlength="8"
+                />
+              </div>
+               <div class="form-group">
+                <label for="password">Pin</label>
+                <input
+                  type="number"
+                  id="number"
+                  name="password"
+                  placeholder="Create a Pin"
+                  required
+                  minlength="6"
+                />
+              </div>
+
+              <button type="submit" class="submitButton">Sign Up</button>
+            </form>
+
+            <p class="account-text">
+              Already have an account?
+              <a id="haveAccount" href="login.html">Login</a>
+            </p>
+
+            <a href="index.html" class="back-home"> Back to Home </a>
+          </div>
+        </section>
       </div>
     </main>
   </body>
