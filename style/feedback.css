@@ -38,6 +38,7 @@ body {
   transform: scale(1.09);
   cursor: pointer;
 }
+
 .box-nav {
   display: flex;
   flex-direction: row;
@@ -52,9 +53,11 @@ body {
   font-weight: 800;
   font-size: 17px;
 }
+
 .box-nav a:hover {
   color: #f9f9f3;
 }
+
 .feedback-page{
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +66,7 @@ body {
   margin: 40px auto;
   padding: 0 20px;
 }
+
 .feedback-card{
   flex: 1;
   min-width: 320px;
@@ -71,12 +75,14 @@ body {
   border-radius: 12px;
   padding: 25px;
 }
+
 section-title {
   color: #e7c896;
   font-size: 20px;
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
+
 section-desc {
   color: #ccc;
   font-size: 13px;
@@ -88,11 +94,13 @@ section-desc {
   flex-direction: column;
   gap: 15px;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
+
 .form-group label {
   color: #e7c896;
   font-size: 14px;
@@ -116,6 +124,7 @@ section-desc {
 .form-group textarea:focus {
   border-color: #fff762;
 }
+
 .star-rating {
   display: flex;
   flex-direction: row-reverse;
