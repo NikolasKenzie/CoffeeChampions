@@ -61,7 +61,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
- transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 .button-signLog:hover {
@@ -177,8 +177,7 @@ body {
   border-color: #e7c896;
 }
 
-.card-menu > img:not(.icon-bestSeller) {
-  display: block;
+.card-menu img:not(.icon-bestSeller) {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -224,12 +223,13 @@ body {
 
 #sec-table-tierList {
   width: 90%;
-  max-width: 1100px;
   margin: 60px auto;
   padding: 25px;
   background-color: #1a1511;
   border: 1px solid burlywood;
   border-radius: 15px;
+
+  overflow-x: auto;
 }
 
 #sec-table-tierList h2 {
@@ -271,7 +271,7 @@ body {
 }
 
 #sec-table-tierList tbody tr {
-  transition: background-color 250ms ease;
+  transition: 250ms ease;
 }
 
 #sec-table-tierList tbody tr:hover {
@@ -282,29 +282,68 @@ body {
   border-bottom: none;
 }
 
-.badge-best,
-.badge-fav,
-.badge-new {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: bold;
-  white-space: nowrap;
-}
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px 15px;
+  }
 
-.badge-best {
-  background-color: #e7c896;
-  color: #21170f;
-}
+  #nav h2 {
+    font-size: 23px;
+    text-align: center;
+  }
 
-.badge-fav {
-  background-color: #49382a;
-  color: #f5d6a5;
-}
+  .box-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 12px 18px;
+  }
 
-.badge-new {
-  background-color: #30241b;
-  color: #e7c896;
-  border: 1px solid #8b633b;
+  .box-nav a {
+    font-size: 14px;
+  }
+
+  .button-signLog {
+    padding: 10px 18px;
+  }
+
+  .box-cardMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .card-menu {
+    width: calc(50% - 6px);
+    padding: 10px;
+  }
+
+  .card-menu > img:not(.icon-bestSeller) {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card-menu h3 {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    margin: 8px 0;
+  }
+
+  .card-menu p {
+    font-size: 13px;
+  }
+
+  .card-menu button {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+
 }

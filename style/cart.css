@@ -294,6 +294,34 @@ body {
 }
 
 @media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px 15px;
+  }
+
+  #nav h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .box-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .box-nav a {
+    font-size: 14px;
+  }
+
+  .button-signLog {
+    padding: 10px 18px;
+  }
+
+
+
   .cart-layout {
     grid-template-columns: 1fr;
   }

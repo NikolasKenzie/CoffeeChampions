@@ -5,7 +5,6 @@
   font-family: monospace;
 }
 
-
 body {
   background: linear-gradient(to bottom, #000000, #28201a);
   color: white;
@@ -23,7 +22,6 @@ body {
   z-index: 900;
   top: 0;
 }
-
 
 #currentPage {
   color: white;
@@ -87,7 +85,6 @@ body {
   width: 400px;
   border-radius: 20px 60px 40px 80px;
   transition: 250ms;
-  
 }
 .box-openingImg img:hover {
   transform: rotate(10deg);
@@ -141,10 +138,10 @@ body {
   }
   50% {
     transform: rotate(0deg);
-  } 
+  }
   75% {
     transform: rotate(-20deg);
-  } 
+  }
   100% {
     transform: rotate(0deg);
   }
@@ -158,11 +155,11 @@ body {
   text-align: center;
   margin-bottom: 40px;
   color: #e7c896;
-  
 }
 .box-menuHome {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -205,11 +202,8 @@ body {
   background-color: #945d22;
 }
 
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-   #nav {
+@media only screen and (max-width: 768px) {
+  #nav {
     flex-direction: column;
     justify-content: center;
     gap: 18px;
@@ -234,5 +228,34 @@ body {
   .button-signLog {
     padding: 10px 18px;
   }
+
+  #section-A {
+    padding: 40px;
+    margin: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .box-openingImg img {
+    width: 80%;
+  }
+
+  #section-B {
+    width: 95%;
+  }
+  .card-menuHome {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    padding: 10px;
+  }
+  .card-menuHome img {
+    width: 70%;
+    object-fit: cover;
+  }
+
 }
 
